@@ -1,0 +1,162 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Global CSS Reset */
+* {
+    margin: var(--no-Margin);
+    padding: var(--no-Padding);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin-block-end: 0;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Global CSS Changes w/ Root */
+:root {
+    /* Colors */
+    --clr-Yellow: #f4d04e;
+    --clr-Gray1: #111111;
+    --clr-Gray2: #686868;
+    --clr-White: #FFFFFF;
+    --clr-Black: #000000;
+
+    /* Font */
+    --FF: "Figtree", serif;
+
+    --FS-13: 0.813rem; /* 13px */
+    --FS-14: 0.875rem; /* 14px */
+    --FS-16: 1rem;     /* 16px */
+    --FS-24: 1.5rem;   /* 24px */
+
+    --FW-400: 400;
+    --FW-500: 500;
+    --FW-800: 800;
+
+    /* Other */
+    --no-Margin: 0;
+    --no-Padding: 0;
+}
+
+/* Typography */
+body {
+    font-family: var(--FF);
+}
+
+.blog-title {
+    font-size: var(--FS-24);
+    font-weight: var(--FW-800);
+}
+
+.blog-desc {
+    font-size: var(--FS-16);
+    color: var(--clr-Gray2);
+}
+
+.blog-author-name,
+.blog-date,
+.blog-category {
+    font-size: var(--FS-14);
+    color: var(--clr-Gray1);
+}
+
+.blog-date {
+    font-weight: var(--FW-500);
+}
+
+.blog-desc {
+    font-weight: var(--FW-400);
+    font-size: var(--FS-13);
+}
+
+.blog-author-name,
+.blog-category {
+    font-weight: var(--FW-800);
+}
+
+/* Layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-Yellow);
+}
+
+.blog-container {
+    background-color: var(--clr-White);
+    border-radius: 20px;
+    max-width: 350px;
+    justify-content: center;
+    border: 1px solid var(--clr-Gray1);
+    box-shadow: 8px 8px 0px 0px var(--clr-Black);
+    transition: ease 0.2s;
+    padding: 1.5em;
+    cursor: pointer;
+}
+
+.blog-container:hover,
+.blog-container:focus,
+.blog-container:active {
+    box-shadow: 12px 12px 0px 0px var(--clr-Black);
+}
+
+.blog-image img {
+    border-radius: 10px;
+}
+
+.blog-category {
+    margin-top: 0.625em;
+    background-color: var(--clr-Yellow);
+    max-width: 80px;
+    padding: 0.25em 0.75em;
+    border-radius: 8px;
+}
+
+.blog-date {
+    margin-top: 0.625em;
+    margin-bottom: 0.625em;
+}
+
+.blog-title {
+    margin-bottom: 0.75em;
+}
+
+.blog-desc {
+    margin-bottom: 0.625em;
+}
+
+.blog-author {
+    display: flex;
+    align-items: center;
+}
+
+.blog-author img {
+    width: 32px;
+    height: 32px;
+    margin-right: 0.75em;
+}

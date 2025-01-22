@@ -1,0 +1,45 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* CSS Global Changes */
+:root {
+    /* Colors */
+    --clr-white: #f5f5f5;
+    --clr-black: #121212;
+
+
+    /* Font */
+    --FF: "Roboto", serif;
+
+    --FS-16: 1rem;
+}
+
+/*  */
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: var(--FF);
+    color: var(--clr-black);
+    background-color: var(--clr-white);
+    font-size: var(--FS-16);
+}
+
+.sender-container {
+    text-align: right;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+p, ul, ol, dl, address {
+    font-size: 1.1em;
+}
+
+p, li, dd, dt, address {
+    line-height: 1.5;
+}
