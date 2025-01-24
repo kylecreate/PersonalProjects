@@ -1,0 +1,247 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global CSS Reset */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    text-size-adjust: none;
+}
+
+body,
+h1,
+p {
+    margin-block-end: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+h1,
+button,
+input,
+label {
+    line-height: 1.1;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+fieldset {
+    border: none;
+}
+
+/* Global CSS Changes w/ Root */
+:root {
+    /* Colors */
+    --clr-white: rgb(255, 255, 255);
+    --clr-black: rgb(18, 18, 18);
+    --clr-form-bg: rgba(0, 0, 0, 0.5);
+    --clr-site-overlay: rgba(3, 44, 78, 0.777);
+    --clr-btn-bg: rgb(4, 170, 109);
+    --clr-btn-bg-hover: rgb(6, 130, 84);
+    --clr-footer-text: rgba(255, 255, 255, 0.457);
+    --clr-footer-visit: rgb(169, 169, 169);
+    --clr-footer-hover: rgba(0, 0, 255, 0.78);
+
+    /* Font */
+    --FF: "Roboto", serif;
+
+    --FS-12: 0.75rem; /* 12px */
+    --FS-16: 1rem;    /* 16px */
+    --FS-17: 17px;    /* 24px */
+    --FS-32: 2rem;    /* 32px */
+
+    --FW-Bold: bold;
+    --FW-Medium: medium;
+    --FW-Regular: normal;
+}
+
+/* Typography */
+body {
+    font-family: var(--FF);
+    font-size: var(--FS-16);
+    color: var(--clr-white);
+}
+
+#title,
+#description {
+    text-align: center;
+}
+
+#title {
+    margin-top: 1.25em;
+    font-size: var(--FS-32);
+    font-weight: var(--FW-Bold);
+}
+
+#description {
+    font-size: var(--FS-17);
+    font-weight: lighter;
+    font-style: italic;
+    margin-bottom: 0.625em;
+}
+
+p {
+    font-size: var(--FS-16);
+}
+
+input,
+button,
+textarea,
+select,
+option {
+    font-family: var(--FF);
+}
+
+span {
+    font-style: italic;
+    font-size: var(--FS-12);
+}
+
+/* Page Layout */
+html {
+    background: url(/images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px var(--clr-site-overlay);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input {
+    border: none;
+    border-radius: 4px;
+    padding: 0.25em;
+}
+
+/* Form Layout */
+form {
+    background-color: var(--clr-form-bg);
+    padding: 1.25em;
+    border-radius: 10px;
+    display: grid;
+    width: 500px;
+}
+
+.form-name {
+    display: grid;
+    margin-bottom: 0.938em;
+}
+
+#name,
+#email,
+#age,
+.dropdown {
+    margin-top: 0.313em;
+}
+
+#email-label,
+#number-label,
+#curr-role {
+    display: grid;
+    margin-bottom: 0.938em;
+    margin-top: 0.5em;
+}
+
+.dropdown {
+    padding: 0.625em;
+    border: none;
+    font-family: var(--FF);
+}
+
+#radio-group legend {
+    margin-bottom: 0.5em;
+}
+
+#radio-group {
+    margin-bottom: 0.938em;
+}
+
+.radio-item {
+    margin-bottom: 0.125em;
+}
+
+#fav-feature {
+    margin-bottom: 0.625em;
+}
+
+#fav-feature-select {
+    margin-top: 0.313em;
+    margin-bottom: 0.625em;
+}
+
+.improvement {
+    display: grid;
+    margin-top: 0.313em;
+    margin-bottom: 0.625em;
+}
+
+#comments {
+    display: flex;
+    margin-top: 0.313em;
+    margin-bottom: 1.25em;
+    resize: none;
+}
+
+#submit {
+    background-color: var(--clr-btn-bg);
+    border: none;
+    color: white;
+    padding: 0.5em 1em;
+    text-align: center;
+    display: inline-block;
+    font-size: var(--FS-16);
+    font-weight: var(--FW-Bold);
+    border-radius: 8px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#submit:hover,
+#submit:active {
+    background-color: var(--clr-btn-bg-hover);
+}
+
+footer {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--clr-footer-text);
+    font-weight: var(--FW-Bold);
+}
+
+footer a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer a:hover,
+footer a:focus {
+    color: var(--clr-footer-hover);
+}
+
+footer a:visited {
+    color: var(--clr-footer-visit);
+}

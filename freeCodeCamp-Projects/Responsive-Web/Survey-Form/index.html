@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="kylecreate">
+    <meta name="description" content="freeCodeCamp Survey Form | Certification project for the Responsive Web Design course">
+    <title>freeCodeCamp Responsive Web Design - Survey Form</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="form-container">
+
+        <!-- Form Intro -->
+        <div class="form-intro">
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </div>
+
+        <!-- Form -->
+        <form action="" id="survey-form">
+
+            <!-- Name -->
+            <label class="form-name" for="name" id="name-label">Name
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </label>
+
+            <!-- Email -->
+            <label for="Email" id="email-label">Email
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            </label>
+
+            <!-- Age -->
+            <label for="Age" id="number-label">Age (optional)
+                <input type="number" name="age" id="number" placeholder="Age" min="12" max="95" required>
+            </label>
+
+            <!-- Current Role -->
+            <label for="curr-role" id="curr-role">Which option best describes your current role?
+                <select name="curr-role" id="dropdown">
+                    <option value="">Select Current Role</option>
+                    <option value="student">Student</option>
+                    <option value="full-job">Full Time Job</option>
+                    <option value="part-learn">Part Time Learner</option>
+                    <option value="not-say">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+
+            <!-- Recc to Friend -->
+            <fieldset id="radio-group">
+                <legend>Would you reccommend freeCodeCamp to a friend?</legend>
+
+                <div class="radio-item">
+                    <input type="radio" id="definitely" name="recc-friend" id="recc-friend-def" value="D">
+                    <label for="definitely">Definitely</label>
+                </div>
+
+                <div class="radio-item">
+                    <input type="radio" id="maybe" name="recc-friend" id="recc-friend-may" value="M">
+                    <label for="maybe">Maybe</label>
+                </div>
+
+                <div class="radio-item">
+                    <input type="radio" id="not-sure" name="recc-friend" id="recc-friend-nots" value="N">
+                    <label for="not-sure">Not Sure</label>
+                </div>
+            </fieldset>
+
+            <!-- Favorite Feature -->
+            <label for="favorite-feature" class="fav-feature">What is your favroite feature of freeCodeCamp?</label>
+            <select name="fav-feature-select" id="fav-feature-select">
+                <option value="">Select an Option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="open-source">Open Source</option>
+            </select>
+
+            <!-- Improvement -->
+            <fieldset class="improvement">
+                <legend>What would you like to see improved? <span>(Check all that apply)</span></legend>
+
+                <div class="cb-item">
+                    <input type="checkbox" name="fe-projects" id="fe-projects" value="front-end-projects">
+                    <label for="fe-projects">Front-end Projects</label>
+                </div>
+
+                <div class="cb-item">
+                    <input type="checkbox" name="be-projects" id="be-projects" value="back-end-projects">
+                    <label for="be-projects">Back-end Projects</label>
+                </div>
+
+                <div class="cb-item">
+                    <input type="checkbox" name="data-vis" id="data-vis" value="data-visualization">
+                    <label for="data-vis">Data Visualization</label>
+                </div>
+
+                <div class="cb-item">
+                    <input type="checkbox" name="challenge" id="challenge" value="challenges">
+                    <label for="challenge">Challenges</label>
+                </div>
+
+                <div class="cb-item">
+                    <input type="checkbox" name="osc" id="osc" value="open-source-commiunity">
+                    <label for="osc">Open Source Community</label>
+                </div>
+
+                <div class="cb-item">
+                    <input type="checkbox" name="discord" id="discord" value="discord-help">
+                    <label for="discord">Discord Help Channels</label>
+                </div>
+
+                <div class="cb-item">
+                    <input type="checkbox" name="youtube" id="youtube" value="youtube-videos">
+                    <label for="youtube">YouTube Videos</label>
+                </div>
+
+                <div class="cb-item">
+                    <input type="checkbox" name="meetups" id="meetups" value="city-meetups">
+                    <label for="meetups">City Meetups</label>
+                </div>
+
+                <div class="cb-item">
+                    <input type="checkbox" name="wiki" id="wiki" value="wiki">
+                    <label for="wiki">Wiki</label>
+                </div>
+
+                <div class="cb-item">
+                    <input type="checkbox" name="forums" id="forums" value="forums">
+                    <label for="forums">Forums</label>
+                </div>
+
+                <div class="cb-item">
+                    <input type="checkbox" name="courses" id="courses" value="additional-courses">
+                    <label for="courses">Additional Courses</label>
+                </div>
+            </fieldset>
+
+            <!-- Comments/Suggestions -->
+            <label for="comments">Any comments or suggestions?
+                <textarea name="comments" id="comments" cols="43" rows="3" placeholder="Enter your comment/suggestion here"></textarea>
+            </label>
+
+            <!-- Submit Button -->
+            <button type="submit" id="submit">Submit</button>
+
+        </form>
+
+        <!-- Footer w/ Credit -->
+        <footer class="footer">
+            <p class="credit">Created by <a href="https://github.com/kylecreate" target="_blank">kylecreate</a> 2025</p>
+        </footer>
+    </div>
+</body>
+
+</html>
