@@ -1,0 +1,57 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    text-size-adjust: none;
+}
+
+body, p {
+    margin-block-end: 0;
+}
+
+body {
+    line-height: 1.5;
+}
+
+/* Layout */
+body {
+    font-family: "Roboto", serif;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    margin-top: 100px;
+}
+
+.post {
+    background-color: lightgray;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.spoiler {
+    background-color: black;
+    border-radius: 4px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.spoiler:hover,
+.spoiler:focus {
+    background-color: transparent;
+}
