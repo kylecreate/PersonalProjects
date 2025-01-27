@@ -1,0 +1,79 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Reset CSS */
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global CSS Changes with Root */
+:root {
+    /* Colors */
+    --body-bg: rgb(30, 31, 37);
+    --btn-bg: rgb(0, 0, 0);
+    --btn-color: rgb(203, 203, 203);
+    --btn-color-hover: rgb(255, 255, 255);
+    --grad-color1: #eeaf61;
+    --grad-color2: #fb9062;
+    --grad-color3: #ee5d6c;
+    --grad-color4: rgb(206, 73, 147);
+    --grad-color5: rgb(106, 13, 131);
+
+    /* Font */
+    --FF: "Open Sans", serif;
+
+    --FS-16: 1rem;
+}
+
+/* Typography */
+body {
+    font-family: var(--FF);
+    font-size: var(--FS-16);
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Layout */
+body {
+    margin-inline: auto;
+    background-color: var(--body-bg);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 450px;
+}
+
+.button-border {
+    border: 4px solid transparent;
+    padding: 2px;
+    border-image: linear-gradient(115deg, var(--grad-color1) 0%, var(--grad-color2) 50%, var(--grad-color3) 100%) 10% round;
+    cursor: pointer;
+}
+
+.button-border:hover {
+    border: 4px solid transparent;
+    padding: 2px;
+    border-image: linear-gradient(-115deg, var(--grad-color1) 0%, var(--grad-color2) 50%, var(--grad-color3) 100%) 10% round;
+    scale: 1.01;
+}
+
+.button {
+    background-color: var(--btn-bg);
+    color: var(--btn-color);
+    font-weight: bold;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    scale: 1.01;
+}
