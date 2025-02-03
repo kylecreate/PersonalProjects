@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kyle">
+    <meta name="description" content="FCC Project for Responsive Design of a Tech Doc Project">
+    <title>FCC - Tech Doc Project</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <nav id="nav-bar">
+        <h1 class="site-title">Java Documentation</h1>
+        <ul>
+            <li><a href="#Getting_Started_with_Java" class="nav-link">Getting Started with Java</a></li>
+            <li><a href="#Java_Entry_Point" class="nav-link">Java Entry Point</a></li>
+            <li><a href="#Printing_to_the_Console" class="nav-link">Printing to the Console</a></li>
+            <li><a href="#Declaring_Functions" class="nav-link">Declaring Functions</a></li>
+            <li><a href="#Object_Orriented_Programming" class="nav-link">Object Orriented Programming</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Getting_Started_with_Java">
+            <h2 class="section-title">Getting Started with Java</h2>
+            <p>Steps in getting started</p>
+            <ol>
+                <li><a href="https://www.java.com/en/download/" target="_blank">Download Java</a></li>
+                <li><a href="https://www.oracle.com/java/technologies/downloads/" target="_blank">Download Java SDK</a></li>
+                <li>Get an Integrated Development Environment (IDE)</li>
+                <li>Start a project within the IDE</li>
+                <li>Code up "Hello World" and run the code</li>
+            </ol>
+        </section>
+
+        <section class="main-section" id="Java_Entry_Point">
+            <h2 class="section-title">Java Entry Point</h2>
+
+            <p>The entry point to a Java application is the main function.</p>
+            <p>It is categorized by its (String[ ] arg) as a parameter to the function.</p>
+            <pre>
+                <code>
+                    public class myMainFunction {
+                        <span class="code-comment">/* Java main function example */</span>
+                        public static void main(String[ ] args) {
+                        }
+                    }
+                </code>
+            </pre>
+            <p>As you can see, the main function is wrapped within a class which is part of the Object Orriented structure of Java projects. The name of the project is therefore "MyMainFunction".</p>
+        </section>
+
+        <section class="main-section" id="Printing_to_the_Console">
+            <h2 class="section-title">Printing to the Console</h2>
+            <p>In order to print to the console, we use System.out.printIn. I know it's very long and cumbersome, but this is the way it's done.</p>
+            <pre>
+                <code>
+                    public class MyMainFunction {
+                        <span class="code-comment">/* Java main function example */</span>
+                        public static void main(String[ ] args) {
+                            System.out.printIn("Hello World!");
+                        }
+                    }
+                </code>
+            </pre>
+            <p>In this example, we are printing out "Hello World!" to the console when we run the program.</p>
+        </section>
+
+        <section class="main-section" id="Declaring_Functions">
+            <h2 class="section-title">Declaring Functions</h2>
+            <p>Functions are actually called methods in Java. Here's an example of how to declare a Java method.</p>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240717150503/1.webp" alt="java-method-image" class="image">
+            <p>Some copyable code:</p>
+            <pre>
+                <code>
+                    Public static void myFunction( String name, int age)
+                    {
+                        <span class="code-comment">// Function code</span>
+                    }
+                </code>
+            </pre>
+        </section>
+
+        <section class="main-section" id="Object_Orriented_Programming">
+            <h2 class="section-title">Object Orriented Programming</h2>
+            <p>Java is known as an Object Orriented Programming language. This means that it's easy to represent entities as objects by using classes and encapsulation.</p>
+            <p>An example of this might be a Student class to represent a student.</p>
+            <pre>
+                <code>
+                    public class Student {
+
+                        <span class="code-comment">/* Student properties */</span>
+                        private String name;
+                        private int age;
+
+                        <span class="code-comment">/* Constructor */</span>
+                        public Student(String name, int age) {
+                            this.name = name;
+                            this.age = age;
+                        }
+
+                        <span class="code-comment">/* Getter method */</span>
+                        public String getName() {
+                            return name;
+                        }
+
+                        <span class="code-comment">/* Setter method */</span>
+                        public void setName(String name) {
+                            this.name = name;
+                        }
+                    }
+                </code>
+            </pre>
+
+            <p>We use this class by doing the following:</p>
+            <pre>
+                <code>
+                    Student student1 = new Student("Jimmy", 19);
+                    String jimmyName = student1.getName();
+
+                    student1.setName("Kevin");
+                    String kevinName = student1.getName();
+                </code>
+            </pre>
+        </section>
+
+        <footer>
+            <p class="footer-text">Documentation brought to you by <a href="https://bsky.app/profile/kylecreate.dev" target="_blank">Kyle</a></p>
+        </footer>
+    </main>
+</body>
+
+</html>

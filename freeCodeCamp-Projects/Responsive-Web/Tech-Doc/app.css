@@ -1,0 +1,216 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Global CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body, h1, h2, p {
+    margin-block-end: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+h1, h2 {
+    line-height: 1.1;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Global Changes w/ Root */
+:root {
+    /* Colors */
+    --clr-white: rgb(255, 255, 255);
+    --clr-black: rgb(0, 0, 0);
+    --clr-text: #121212;
+    --clr-bg: rgb(234, 234, 234);
+    --clr-nav-item: rgb(77, 78, 83);
+    --clr-footer-text: rgb(173, 173, 173);
+    --clr-code-comment: rgb(173, 173, 173);
+
+    /* Font */
+    --FF: "Open Sans", serif;
+
+    --FS-16: 1rem;     /* 16px */
+    --FS-18: 1.125rem; /* 18px */
+    --FS-24: 1.5rem;   /* 24px */
+    --FS-28: 1.75rem;  /* 28px */
+
+    --FW-bold: bold;
+    --FW-normal: normal;
+    --FW-500: 500;
+
+    /* Other */
+    --margin-10: 0.625em; /* 10px */
+    --margin-20: 1.25em;  /* 20px */
+    --margin-30: 1.875em; /* 30px */
+}
+
+/* Typography */
+body {
+    font-family: var(--FF);
+    color: var(--clr-text);
+}
+
+.site-title {
+    font-size: var(--FS-28);
+    font-weight: var(--FW-bold);
+}
+
+.section-title {
+    font-size: var(--FS-24);
+    font-weight: var(--FW-bold);
+}
+
+#navbar a {
+    font-size: var(--FS-18);
+}
+
+p {
+    font-size: var(--FS-16);
+    font-weight: var(--FW-normal);
+}
+
+#Getting_Started_with_Java a {
+    color: var(--clr-text);
+    transition: color 0.4s ease-in-out;
+}
+
+#Getting_Started_with_Java a:hover {
+    color: var(--clr-footer-text);
+}
+
+.code-comment {
+    font-style: italic;
+    color: var(--clr-code-comment);
+}
+
+/* Layout Changes */
+body {
+    background-color: var(--clr-bg);
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    margin-top: 2.5em;
+}
+
+#nav-bar {
+    background-color: var(--clr-white);
+    width: 100%;
+}
+
+#nav-bar li {
+    color: var(--clr-nav-item);
+    width: 100%;
+    border-bottom: 1px solid;
+}
+
+#nav-bar a {
+    display: block;
+    padding: var(--margin-10) var(--margin-30);
+    color: var(--clr-nav-item);
+    text-decoration: none;
+    cursor: pointer;
+    transition: text-indent 0.3s ease-in-out;
+}
+
+#nav-bar a:hover {
+    font-weight: var(--FW-500);
+    text-indent: 5px;
+}
+
+p {
+    margin: var(--margin-10);
+}
+
+ol {
+    margin-left: var(--margin-30);
+}
+
+#main-doc {
+    margin: 0 auto;
+}
+
+h1, header {
+    color: var(--clr-black);
+    margin: var(--margin-10);
+    text-align: center;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    background-color: var(--clr-white);
+    padding: 0.938em;
+    margin: var(--margin-10);
+    border-radius: 5px;
+}
+
+.image {
+    width: 100%;
+}
+
+footer {
+    padding: var(--margin-30);
+    text-align: center;
+    color: var(--clr-footer-text);
+}
+
+.footer-text a {
+    color: var(--clr-footer-text);
+    transition: color 0.4s ease-in-out;
+}
+
+.footer-text a:hover {
+    color: var(--clr-black);
+}
+
+@media only screen and (min-width: 815px) {
+    body {
+        flex-direction: row;
+    }
+
+    #nav-bar {
+        width: 300px;
+        position: fixed;
+        height: 100%;
+        resize: horizontal;
+        overflow-x: scroll;
+    }
+
+    .image {
+        width: 70%;
+        margin-left: var(--margin-20);
+    }
+
+    #main-doc {
+        margin: 0 var(--margin-20);
+        margin-left: 350px;
+    }
+}
