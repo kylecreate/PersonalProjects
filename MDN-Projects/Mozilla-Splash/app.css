@@ -1,0 +1,82 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Header and Body Setup */
+html {
+    font-family: "Open Sans", serif;
+    background: url(/images/pattern.png);
+}
+
+body {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+}
+
+/* Header Styling */
+header {
+    height: 150px;
+}
+
+header img {
+    width: 100px;
+    position: absolute;
+    right: 32.5px;
+    top: 32.5px;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 140px;
+    margin: 0 0 0 32.5px;
+}
+
+/* Main Section and Video Styling */
+main {
+    background-color: #ccc;
+}
+
+article {
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+p {
+    line-height: 2;
+}
+
+iframe {
+    float: left;
+    margin: 0 20px 20px 0;
+    max-width: 100%;
+}
+
+/* Further Info Links */
+.further-info {
+    clear: left;
+    padding: 40px 0;
+    background-color: #c13832;
+    box-shadow: inset 0 3px 2px rgba(0, 0, 0, 0.5)
+                inset 0 -3px 2px rgba(0, 0, 0, 0.5);
+}
+
+.further-info a {
+    width: 25%;
+    display: block;
+    float: left;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* Red Panda Image */
+.red-panda img {
+    display: block;
+    max-width: 100%;
+}
