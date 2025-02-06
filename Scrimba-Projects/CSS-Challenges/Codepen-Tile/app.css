@@ -1,0 +1,140 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global CSS Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body, h3, p {
+    margin-block-end: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+h3 {
+    line-height: 1.1;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Global CSS Root Changes */
+:root {
+    /* Colors */
+    --clr-bg-main: rgb(19, 20, 23);
+    --clr-bg-card: rgb(30, 31, 38);
+    --clr-bg-stats: rgb(19, 20, 23);
+    --clr-username: rgb(183, 187, 200);
+    --clr-white: rgb(255, 255, 255);
+    --clr-black: rgb(0, 0, 0);
+    --clr-text: rgb(18, 18, 18);
+
+    /* Font */
+    --FF: "Noto Sans", serif;
+
+    --FS-14: 0.875rem; /* 14px */
+    --FS-16: 1rem;     /* 16px */
+
+    --FW-normal: normal;
+    --FW-500: 500;
+    --FW-bold: bold;
+}
+
+/* Typography */
+body {
+    font-family: var(--FF);
+    color: var(--clr-white);
+}
+
+.card-details h3 {
+    font-weight: var(--FW-bold);
+    font-size: var(--FS-16);
+}
+
+.card-details p {
+    font-weight: var(--FW-normal);
+    font-size: var(--FS-14);
+}
+
+.card-stats li {
+    font-weight: var(--FW-500);
+}
+
+/* Layout */
+body {
+    background-color: var(--clr-bg-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 350px;
+}
+
+.card {
+    background-color: var(--clr-bg-card);
+    border-radius: 8px;
+    padding: 1.25em;
+    cursor: pointer;
+}
+
+.card-thumbnail img {
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.card-body {
+    margin-top: 0.625em;
+    align-content: center;
+}
+
+.card-avatar img {
+    border-radius: 6px;
+    width: 16%;
+}
+
+.card-details {
+    margin-left: 4.06em;
+    margin-top: -3.125em;
+}
+
+.card-stats {
+    display: none;
+    padding-bottom: 0.5em;
+}
+
+.card-stats li {
+    background-color: var(--clr-bg-stats);
+    margin-right: 0.5em;
+    margin-top: 1.563em;
+    border-radius: 5px;
+    padding: 0.313em;
+}
+
+.card:hover .card-stats {
+    display: flex;
+}
+
+.card:hover {
+    padding-bottom: 0;
+}
