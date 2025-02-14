@@ -181,7 +181,6 @@ td {
 
 @media (min-width: 1024px) {
     body {
-        max-width: 1024px;
         background-color: rgba(250, 128, 114, 0.27);
     }
 
