@@ -1,0 +1,83 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Complete CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body,
+h1,
+h2,
+p {
+    margin-block-end: 0;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+h1,
+h2 {
+    line-height: 1.1;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* CSS Stylings with Root */
+:root {
+    /* Color */
+    --clr-text: #121212;
+    --clr-job: #313131;
+    --clr-black: black;
+    --clr-white: white;
+
+    /* Font */
+    --FF: "Open Sans", serif;
+
+    --FS-14: 0.9rem; /* 14px */
+    --FS-16: 1rem;   /* 16px */
+    --FS-24: 1.5rem; /* 24px */
+
+    --FW-normal: normal;
+    --FW-bold: bold;
+
+    /* Other */
+    --margin-auto: 0 auto;
+}
+
+/* Typography */
+body {
+    font-family: var(--FF);
+    font-size: var(--FS-16);
+    color: var(--clr-text);
+}
+
+.testimonial-info-job {
+    font-size: var(--FS-14);
+    color: var(--clr-job);
+    text-transform: uppercase;
+}
+
+.testimonial-info-name {
+    font-size: var(--FS-24);
+    font-weight: var(--FW-bold);
+}
+
+.testimonial-quote {
+    font-size: var(--FS-16);
+}
+
+/* Layout */
