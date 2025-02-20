@@ -1,0 +1,101 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body,
+h2,
+p {
+    margin-block-end: 0;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+h2 {
+    line-height: 1.1;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Global CSS Changes w/ root */
+:root {
+    /* Colors */
+    --clr-background: #ccc;
+    --clr-card: #A7BEAE;
+    --clr-card2: #E7E8D1;
+
+    /* Font */
+    --FF: "Roboto", serif;
+
+    --FS-14: 0.9rem; /* 14px */
+    --FS-18: 1.1rem; /* 18px */
+}
+
+/* Typography */
+body {
+    font-family: var(--FF);
+    font-size: var(--FS-14);
+}
+
+/* Layout */
+body {
+    background-color: var(--clr-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: var(--clr-card);
+    border-radius: 15px;
+    border: 0.1em solid black;
+    box-shadow: 3px 2px 11px -4px rgba(0,0,0,0.5);
+    width: 35em;
+    height: 22em;
+}
+
+.card header {
+    margin: 1.2em 1em;
+}
+
+.card article {
+    background-color: var(--clr-card2);
+    padding-bottom: 0.3em;
+}
+
+.card article p {
+    margin: 0 1.2em 1.2em 1.2em;
+    padding-top: 0.8em;
+}
+
+.card article img {
+    float: right;
+    max-height: 100%;
+    max-width: 35%;
+    border-radius: 15px;
+    margin-right: 1.5em;
+}
+
+.card footer {
+    text-align: center;
+    font-size: var(--FS-18);
+    margin-top: 1.2em;
+}
