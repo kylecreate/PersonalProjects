@@ -1,0 +1,95 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body,
+h1,
+p {
+    margin-block-end: 0;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+h1 {
+    line-height: 1.1;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Global CSS Changes w/ Root */
+:root {
+    /* Colors */
+    --clr-text: rgb(30, 30, 30);
+    --clr-white: rgb(255, 255, 255);
+    --clr-black: rgb(0, 0, 0);
+    --clr-bg1: rgba(255,255,255,1);
+    --clr-bg2: rgba(238,238,238,1);
+    --clr-box-shadow: rgba(0,0,0,0.58);
+
+    /* Font */
+    --FF: "Montserrat", serif;
+
+    --FS-14: 0.9rem; /* 14px */
+    --FS-16: 1rem;   /* 16px */
+}
+
+/* Typography */
+body {
+    font-family: var(--FF);
+    font-size: var(--FS-16);
+    color: var(--clr-text);
+}
+
+h1,
+address {
+    font-size: var(--FS-14);
+
+}
+
+/* Layout */
+body {
+    background: url(/images/top-image.png) top no-repeat, url(/images/bottom-image.png) bottom no-repeat, linear-gradient(180deg, var(--clr-bg1) 0%, var(--clr-bg2) 100%);
+}
+
+h1 {
+    background: url(/images/logo.png) no-repeat center/cover;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    -webkit-box-shadow: 7px 7px 22px -14px var(--clr-box-shadow);
+    -moz-box-shadow: 7px 7px 22px -14px var(--clr-box-shadow);
+    box-shadow: 7px 7px 22px -14px var(--clr-box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--clr-white);
+    line-height: 1.2;
+}
+
+address {
+    position: absolute;
+    left: 625px;
+    top: 750px;
+}
