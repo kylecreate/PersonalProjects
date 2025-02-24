@@ -1,0 +1,170 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Global CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body,
+p {
+    margin-block-end: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+button,
+input,
+label {
+    line-height: 1.1;
+}
+
+input,
+button {
+    font-family: inherit;
+}
+
+/* Global CSS Changes w/ Root */
+:root {
+    /* Colors */
+    --clr-black: rgb(0, 0, 0);
+    --clr-btn-hover: rgb(50, 50, 50);
+    --clr-text: rgb(30, 30, 30);
+    --clr-lightgray: rgb(119, 119, 119);
+    --profile-list-bg: rgba(128, 128, 128, 0.5);
+
+    /* Font */
+    --FF: "Open Sans", serif;
+}
+
+/* Typography */
+body {
+    font-family: var(--FF);
+    color: var(--clr-text);
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    color: var(--clr-lightgray);
+}
+
+/* Layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1.2em;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--clr-black);
+    border-radius: 10px;
+    padding: 1.875em;
+    width: 650px;
+}
+
+.form-container {
+    padding: 1.2em;
+    margin-right: 3.125em;
+}
+
+#full-name,
+#email,
+#password,
+#c-password {
+    display: flex;
+}
+
+label {
+    margin-bottom: 1em;
+}
+
+input {
+    margin-top: 3px;
+    margin-bottom: 0.75em;
+    border-radius: 0.75em;
+    border: none;
+    border: 1px solid var(--clr-black);
+    padding: 0.3em;
+    width: 200px;
+    text-indent: 5px;
+}
+
+#email {
+    border: 2px solid red;
+}
+
+#email::placeholder {
+    color: red;
+}
+
+.taken {
+    font-size: 11px;
+    position: relative;
+    top: -10px;
+    margin-left: 0.5em;
+    color: red;
+}
+
+.btn {
+    width: 100%;
+    background-color: var(--clr-black);
+    border: none;
+    color: white;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--clr-btn-hover);
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border: 1px solid var(--clr-black);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5em 2.5em 0.75em 3.75em;
+}
+
+.circle-text {
+    text-align: center;
+    margin-bottom: 1.2em;
+    font-weight: bold;
+}
+
+.profile-list {
+    background-color: var(--profile-list-bg);
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.profile-list li {
+    margin-bottom: 0.75em;
+}

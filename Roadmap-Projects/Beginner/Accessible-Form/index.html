@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="kylecreate">
+    <meta name="description" content="Roadmap.sh project for beginners to create a accessible form">
+    <link rel="stylesheet" href="app.css">
+    <title>Accessible Form - Roadmap.sh Project</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="form-container">
+            <form action="" method="get" class="update-profile-form">
+                <label for="full-name">Full Name</label>
+                <input type="text" name="full-name" id="full-name" required placeholder="What should we call you?">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required placeholder="john@doe.com">
+                <span class="taken">Email is already taken</span>
+
+                <br>
+
+                <label for="password">Enter Password</label>
+                <input type="password" name="password" id="password" required placeholder="•••••••••" min="4" max="12">
+
+                <label for="c-password">Confirm Password</label>
+                <input type="password" name="c-password" id="c-password" required placeholder="•••••••••" min="4" max="12">
+
+                <button class="btn-update btn">Update Profile</button>
+            </form>
+        </div>
+
+        <div class="profile-complete-container">
+
+            <div class="circle">
+                <div class="center">65%</div>
+            </div>
+            <p class="circle-text">Profile Completeness</p>
+
+            <ul class="profile-list">
+                <li class="strikethrough">Create Account</li>
+                <li class="strikethrough">Update Roadmap Progress</li>
+                <li class="strikethrough">Setup Public Profile</li>
+                <li>Complete First Project</li>
+                <li>Invite your Friends</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>
