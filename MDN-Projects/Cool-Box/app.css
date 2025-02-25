@@ -1,0 +1,42 @@
+/* Global CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body {
+    margin-block-end: 0;
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* Layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background: rgb(147, 198, 147);
+    color: rgb(30, 30, 30);
+    text-align: center;
+    box-shadow: inset 0.2em 0.2em 0.2em 0 rgba(255,255,255,0.5),         inset -0.2em -0.2em 0.2em 0 rgba(0,0,0,0.5),
+                0.3em 0.3em 1.5em -0.4em rgba(0,0,0,0.6);
+    border-radius: 8px;
+    border: 1px solid rgb(101, 135, 101);
+}

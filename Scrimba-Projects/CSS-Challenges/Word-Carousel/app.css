@@ -1,0 +1,89 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body,
+h1 {
+    margin-block-end: 0;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+h1 {
+    line-height: 1.1;
+}
+
+/* Global CSS Changes w/ Root */
+:root {
+    /* Colors */
+    --bg-word: #5134ff;
+    --clr-white: #ffffff;
+
+    /* Font */
+    --FF: "Roboto", serif;
+
+    --FS-16: 1rem; /* 16px */
+}
+
+/* Typography */
+body {
+    font-family: var(--FF);
+    font-size: var(--FS-16);
+}
+
+/* Layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+}
+
+h1::after {
+    content: 'coding';
+    background-color: var(--bg-word);
+    color: var(--clr-white);
+    padding: 12px;
+    border-radius: 6px;
+    animation: words 5s ease-in infinite;
+}
+
+@keyframes words {
+    0% {
+        content: 'dogs'
+    };
+
+    33% {
+        content: 'cats'
+    };
+
+    66% {
+        content: 'walking';
+    }
+
+    100% {
+        content: 'coding';
+    }
+}
