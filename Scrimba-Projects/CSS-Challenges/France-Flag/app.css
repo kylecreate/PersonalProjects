@@ -1,0 +1,51 @@
+/* Complete CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-block-end: 0;
+    min-height: 100vh;
+}
+
+/* CSS Root Changes */
+:root {
+    --red-stripe: rgb(237, 41, 56);
+    --white-stripe: rgb(255, 255, 255);
+    --blue-stripe: rgb(0, 36, 149);
+    --flag-height: 150px;
+}
+
+/* Layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container {
+    border: 1px solid black;
+    height: var(--flag-height);
+    width: calc(var(--flag-height) * 3/2);
+    display: flex;
+    box-shadow: 4px 6px 38px -5px rgba(0,0,0,0.5);
+}
+
+.stripe {
+    flex-grow: 1;
+}
+
+.red {
+    background-color: var(--red-stripe);
+}
+
+.blue {
+    background-color: var(--blue-stripe);
+}
+
+.white {
+    background-color: var(--white-stripe);
+}
