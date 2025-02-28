@@ -1,0 +1,54 @@
+/* Complete CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-block-end: 0;
+    min-height: 100vh;
+}
+
+/* CSS Root Changes */
+:root {
+    --clr-white: rgb(255, 255, 255);
+    --clr-red: rgb(252, 62, 50);
+    --clr-green: rgb(0, 126, 57);
+    --flag-height: 150px;
+}
+
+/* Layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.flag-madagascar {
+    border: 1px solid black;
+    height: var(--flag-height);
+    width: calc(var(--flag-height) * 1.5);
+    box-shadow: 4px 6px 38px -5px rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+.white {
+    background-color: var(--clr-white);
+    width: calc(var(--flag-height) / 2);
+}
+
+.red,
+.green {
+    height: calc(var(--flag-height) / 2);
+}
+
+.red {
+    background-color: var(--clr-red);
+    width: var(--flag-height);
+}
+
+.green {
+    background-color: var(--clr-green);
+}
