@@ -69,7 +69,7 @@ input {
 
     --FS-10: 0.6rem;   /* 10px */
     --FS-16: 1rem;     /* 16px -- Reg Text */
-    --FS-26: 1.6rem;   /* 26px -- H2 & H3 */
+    --FS-20: 1.2rem;   /* 20px -- H2 & H3 */
     --FS-32: 2rem;     /* 32px -- H1 */
 }
 
@@ -101,8 +101,9 @@ body {
     text-align: center;
 }
 
-.article-subtitle /* H3 */ {
-    font-size: var(--FS-26);
+.article-title,
+.article-subtitle {
+    font-size: var(--FS-20);
 }
 
 .add-comment-title,
@@ -143,9 +144,11 @@ footer,
 .nav {
     height: 50px;
     display: flex;
-    padding: 1% 0;
+    padding: 2% 0;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 10px;
-    background-color: var(--clr-background-color);
+    background-color: var(--clr-white);
 }
 
 .nav ul {
@@ -183,9 +186,26 @@ main {
     background-color: var(--clr-white);
 }
 
+.site-title {
+    margin: 20px 0;
+}
+
 article {
     flex: 5;
     margin-right: 10px;
+}
+
+.article-title,
+.article-subtitle {
+    margin-bottom: 15px;
+}
+
+.article-author {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
 }
 
 .secondary {
@@ -199,8 +219,9 @@ footer {
 /* Layout -- Table */
 .bear-table {
     width: 100%;
-    background-color: var(--clr-background-color);
     border-collapse: collapse;
+    margin-bottom: 10px;
+    border: 1px solid black;
 }
 
 .bear-table-head,
@@ -208,7 +229,11 @@ td {
     padding: 10px;
 }
 
-th {
+td {
+    border: 1px solid black;
+}
+
+thead[scope="col"] {
     border-bottom: 1px solid var(--clr-black);
 }
 

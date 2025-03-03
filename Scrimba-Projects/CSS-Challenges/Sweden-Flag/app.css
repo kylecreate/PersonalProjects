@@ -1,0 +1,53 @@
+/* Complete CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-block-end: 0;
+    min-height: 100vh;
+}
+
+/* CSS Root Changes */
+:root {
+    --blue: rgb(2, 105, 166);
+    --yellow: rgb(254, 204, 0);
+
+    --flag-height: 150px;
+    --flag-width: calc(var(--flag-height) * 8/5);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.flag {
+    height: var(--flag-height);
+    width: var(--flag-width);
+    background-color: var(--blue);
+    box-shadow: 4px 6px 38px -5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: relative;
+}
+
+.stripe {
+    background-color: var(--yellow);
+    height: calc(var(--flag-height) * 1/5);
+}
+
+.stripe-yellow {
+    align-self: center;
+    width: 100%;
+}
+
+.stripe-yellow2 {
+    width: var(--flag-height);
+    position: absolute;
+    transform: rotate(90deg);
+    top: calc(var(--flag-height) * 4/10);
+}
