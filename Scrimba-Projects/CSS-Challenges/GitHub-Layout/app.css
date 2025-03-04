@@ -1,0 +1,157 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Complete CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body,
+h2,
+h3,
+p {
+    margin-block-end: 0;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+h2,
+h3,
+button {
+    line-height: 1.1;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    font-family: inherit;
+    color: inherit;
+}
+
+/* CSS Changes with Root */
+:root {
+    /* Colors */
+    --clr-main-bg: rgb(0, 0, 0);
+    --clr-profile-bg: rgb(13, 17, 23);
+    --clr-profile-clr: rgb(201, 209, 217);
+    --clr-profile-img-border: rgb(46, 52, 59);
+    --clr-username: rgb(139, 148, 158);
+    --clr-btn-bg: rgb(33, 38, 45);
+    --clr-btn-color: rgb(201, 209, 217);
+    --clr-bg-hover: rgb(48, 54, 61);
+    --clr-btn-border: rgb(55, 59, 67);
+    --clr-btn-border-hover: rgb(140, 148, 158);
+    --clr-white: rgb(255, 255, 255);
+
+    /* Font */
+    --FF: "Noto Sans", sans-serif;
+
+    --FW-400: 400;
+
+    --FS-16: 1rem;     /* 16px */
+    --FS-18: 1.1rem;   /* 18px */
+    --FS-24: 1.5rem;   /* 24px */
+}
+
+/* Typography */
+body {
+    font-family: var(--FF);
+    font-size: var(--FS-16);
+    color: var(--clr-white);
+}
+
+.profile-details h2 {
+    font-size: var(--FS-24);
+}
+
+.profile-details h3,
+.profile-details p {
+    font-weight: var(--FW-400);
+}
+
+.profile-details h3 {
+    font-size: var(--FS-18);
+    color: var(--clr-username);
+}
+
+/* Layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-main-bg);
+}
+
+.profile-container {
+    max-width: 350px;
+    height: auto;
+    background-color: var(--clr-profile-bg);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.profile-content img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 3px solid var(--clr-profile-img-border);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.profile-details {
+    max-width: 90%;
+    margin-left: 20px;
+}
+
+.profile-details h2 {
+    margin-bottom: 5px;
+}
+
+.profile-details h2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.profile-details h3 {
+    margin-bottom: 20px;
+}
+
+.profile-details p {
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    background-color: var(--clr-btn-bg);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--clr-btn-border);
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: border 0.2s ease-in-out;
+}
+
+button:hover {
+    border: 1px solid var(--clr-btn-border-hover);
+}
