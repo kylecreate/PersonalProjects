@@ -1,0 +1,111 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* Complete CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body,
+p {
+    margin-block-end: 0;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+/* CSS Root Changes */
+:root {
+    --FF: "Karla", sans-serif;
+    --FF-Color: rgb(255, 255, 255);
+
+    --grad-1: rgb(254, 218, 117);
+    --grad-2: rgb(250, 126, 30);
+    --grad-3: rgb(214, 41, 118);
+    --grad-4: rgb(150, 47, 191);
+    --grad-5: rgb(79, 91, 213);
+    --viewed: rgb(128, 128, 128);
+    --bg-main: rgb(0, 0, 0);
+    --bg-live: rgb(255, 0, 0);
+    --white: rgb(255, 255, 255);
+    --black: #000000;
+}
+
+/* Layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--FF);
+    background-color: var(--bg-main);
+    color: var(--FF-Color);
+}
+
+.stories-menu {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.img-wrapper {
+    height: 100px;
+    width: 100px;
+    padding: 4px;
+    background-color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid var(--black);
+}
+
+.new > .img-wrapper {
+    background: linear-gradient(to top right, var(--grad-1), var(--grad-2), var(--grad-3), var(--grad-4), var(--grad-5));
+}
+
+.viewed > .img-wrapper {
+    background: var(--viewed);
+}
+
+.live:after {
+    content: "LIVE";
+    font-size: 0.55rem;
+    font-weight: bold;
+    background-color: var(--bg-live);
+    border-radius: 4px;
+    width: 20px;
+    padding: 3px 6px;
+    position: absolute;
+    top: 68%;
+    margin: auto;
+    left: 0;
+    right: 0;
+}

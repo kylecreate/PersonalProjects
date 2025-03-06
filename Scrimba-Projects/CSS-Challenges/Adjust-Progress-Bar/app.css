@@ -1,0 +1,81 @@
+/* Complete CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body,
+p {
+    margin-block-end: 0;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* CSS Root Changes */
+:root {
+    --stage-1: 25%;
+    --stage-2: 50%;
+    --stage-3: 75%;
+    --stage-4: 100%;
+
+    --progbar-bg: rgb(211, 211, 211);
+
+    --stage-1-bg: rgb(255, 0, 0);
+    --stage-2-bg: rgb(255, 69, 0);
+    --stage-3-bg: rgb(173, 255, 47);
+    --stage-4-bg: rgb(0, 128, 0);
+}
+
+/* Layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 350px;
+    height: 50px;
+    background-color: var(--progbar-bg);
+    border-radius: 50px;
+    box-shadow: 3px 6px 35px -13px rgba(0,0,0,0.25);
+    border: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+.stage-1,
+.stage-2,
+.stage-3,
+.stage-4 {
+    height: 50px;
+    border-radius: 50px;
+}
+
+.stage-1 {
+    width: var(--stage-1);
+    background-color: var(--stage-1-bg);
+}
+
+.stage-2 {
+    width: var(--stage-2);
+    background-color: var(--stage-2-bg);
+}
+
+.stage-3 {
+    width: var(--stage-3);
+    background-color: var(--stage-3-bg);
+}
+
+.stage-4 {
+    width: var(--stage-4);
+    background-color: var(--stage-4-bg);
+}
