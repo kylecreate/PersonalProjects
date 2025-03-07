@@ -121,15 +121,17 @@ body {
 }
 
 #nav-bar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     position: fixed;
-    width: 100%;
     top: 0;
+    left: 0;
+    width: 100%;
     background-color: var(--white);
-    padding: 10px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .nav-links {
@@ -220,7 +222,7 @@ section {
     background-image: url(/images/atomic-habits.jpg);
 }
 
-.card {
+.product-cards {
     background-color: var(--white);
     border-radius: 10px;
     width: 90%;
@@ -270,47 +272,16 @@ section {
     margin-bottom: 10px;
 }
 
-@media only screen and (min-width: 600px) {
-    #nav-bar {
-        flex-direction: row;
-    }
-}
-
-@media only screen and (450px < width < 600px) {
-    .card {
-        font-size: 0.85rem;
-    }
-
-    .product-image {
-        height: 400px;
-    }
-}
-
-@media only screen and (450px <= width) {
-    .card {
+@media (max-width: 768px) {
+    .nav-links {
         display: flex;
-        max-width: 525px;
-    }
-
-    .inner-card {
-        width: 300px;
-        padding: 20px;
-    }
-
-    .product-image {
-        width: 400px;
-        border-radius: 10px 0 0 10px;
-    }
-}
-
-@media only screen and (width >= 1000px) {
-    #video {
-        width: 70%;
+        flex-direction: column;
+        text-align: center;
     }
 
     .product-cards {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
     }
 }

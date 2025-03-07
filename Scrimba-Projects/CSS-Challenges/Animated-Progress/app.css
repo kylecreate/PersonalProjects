@@ -1,0 +1,69 @@
+/* Complete CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body,
+p {
+    margin-block-end: 0;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* CSS Root Changes */
+:root {
+    --progress-bar-bg: rgb(211, 211, 211);
+    --start: rgb(255, 0, 0);
+    --middle: rgb(0, 0, 255);
+    --finish: rgb(0, 128, 0);
+}
+
+/* Layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar {
+    width: 350px;
+    height: 50px;
+    background-color: var(--progress-bar-bg);
+    border-radius: 50px;
+}
+
+.progress-status {
+    height: 50px;
+    border-radius: 50px;
+    width: 10%;
+    background-color: var(--start);
+    animation: progressStatus 6s infinite ease-in-out;
+}
+
+@keyframes progressStatus {
+    50% {
+        background-color: var(--middle);
+        width: 50%;
+    }
+
+    75% {
+        background-color: var(--finish);
+        width: 100%;
+    }
+
+    100% {
+        background-color: var(--finish);
+        width: 100%;
+    }
+}
