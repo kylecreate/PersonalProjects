@@ -1,0 +1,84 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Global CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body {
+    margin-block-end: 0;
+    max-height: 100vh;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+}
+
+/* CSS Changes from Root */
+:root {
+    /* Colors */
+    --clr-text: #1e1e1e;
+    --clr-text-hover: #1414148c;
+
+    /* Font */
+    --FF: "Open Sans", sans-serif;
+
+    --FS-16: 1rem;     /* 16px */
+    --FS-40: 2.5rem;   /* 40px */
+}
+
+/* Typography */
+body {
+    font-family: var(--FF);
+    font-size: var(--FS-16);
+    color: var(--clr-text);
+}
+
+a {
+    color: var(--clr-text);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover,
+a:focus {
+    color: var(--clr-text-hover);
+    text-decoration: underline;
+}
+
+.social-media {
+    font-size: var(--FS-40);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.project-group,
+.project-section {
+    margin-left: 15px;
+}
+
+.project-group ul {
+    margin-left: 25px;
+}
