@@ -1,0 +1,163 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global CSS Reset */
+* {
+    margin: var(--no-margin);
+    padding: var(--no-padding);
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+ul, li {
+    list-style: var(--list-style);
+}
+
+body {
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: var(--no-text-dec);
+}
+
+/* Global CSS Changes w/ root */
+:root {
+    /* Colors */
+    --clr-black: #000000;
+    --clr-white: #ffffff;
+    --clr-text: #2a2a2a;
+    --clr-bg: #e6e6e6;
+
+    /* Font */
+    --FF-text: "Roboto Condensed", serif;
+    --FF-decorative: "Cinzel Decorative", serif;
+
+    --FS-12: 0.75rem; /* 12px */
+    --FS-16: 1rem;    /* 16px */
+    --FS-48: 3rem;    /* 48px */
+    --FS-64: 4rem;    /* 64px */
+
+    /* Other */
+    --no-margin: 0;
+    --no-padding: 0;
+    --list-style: none;
+    --tenpx: 0.625em;
+    --no-text-dec: none;
+}
+
+/* General Changes */
+body {
+    width: 70%;
+    min-width: 800px;
+    margin: var(--no-margin) auto;
+    background-color: var(--clr-bg);
+}
+
+/* Typography */
+.site-title, .welcome-title, .photos-title {
+    font-family: var(--FF-decorative);
+    color: var(--clr-text);
+    text-align: center;
+}
+
+.site-title {
+    font-size: var(--FS-64);
+    text-shadow: 2px 2px 3px var(--clr-black);
+    flex: 5;
+}
+
+.welcome-title, .photos-title {
+    font-size: var(--FS-48);
+}
+
+p {
+    font-family: var(--FF-text);
+    color: var(--clr-text);
+    font-size: var(--FS-16);
+    line-height: 1.5;
+}
+
+/* Header Section */
+header {
+    margin-bottom: var(--tenpx);
+    display: flex;
+    flex-flow: row wrap;
+}
+
+body > * {
+    padding: 1%;
+}
+
+header, nav, main, section, footer {
+    padding: 1%;
+}
+
+.header-img {
+    width: 8%;
+}
+
+.main-nav {
+    height: 50px;
+    flex: 100%;
+    display: flex;
+}
+
+.main-nav ul {
+    padding: var(--no-padding);
+    flex: 2;
+    display: flex;
+}
+
+.main-nav li {
+    display: inline;
+    text-align: center;
+    flex: 1;
+}
+
+.nav-item {
+    color: var(--clr-text);
+}
+
+.nav-item:active, .nav-item:focus, .nav-item:hover {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    border-radius: 3px;
+    padding: 4px;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+}
+
+.section-welcome, .section-photos {
+    flex: 4;
+    max-width: 100%;
+}
+
+.photos-display {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/* Footer Layout */
+.footer {
+    margin-top: var(--tenpx);
+    text-align: center;
+    background-color: #2a2a2a2f;
+}
+
+.foot-text {
+    font-size: var(--FS-12);
+}
+
+.foot-text a {
+    text-decoration: var(--no-text-dec);
+    color: var(--clr-text);
+}

@@ -1,6 +1,3 @@
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
 /* Global CSS Reset */
 * {
     margin: 0;
@@ -59,8 +56,11 @@ a:focus {
 
 .social-media {
     font-size: var(--FS-40);
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 0.55em 0;
+}
+
+.back-link {
+    font-size: var(--FS-16);
 }
 
 /* Layout */
@@ -76,9 +76,9 @@ body {
 
 .project-group,
 .project-section {
-    margin-left: 15px;
+    margin-left: 0.85em;
 }
 
 .project-group ul {
-    margin-left: 25px;
+    margin-left: 1.5em;
 }

@@ -1,0 +1,156 @@
+/* Complete CSS Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    text-size-adjust: none;
+}
+
+body,
+h1,
+h3,
+p {
+    margin-block-end: 0;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+h1,
+h3,
+button {
+    line-height: 1.1;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* CSS Changes w/ Root */
+:root {
+    /* Colors */
+    --clr-background: hsl(0, 0%, 8%);
+    --clr-btn: hsl(0, 0%, 20%);
+    --clr-btn-hover: hsl(75, 94%, 57%);
+    --clr-container-bg: hsl(0, 0%, 12%);
+    --clr-text: hsl(0, 0%, 100%);
+    --clr-user-location: hsl(75, 94%, 57%);
+
+    /* Font */
+    --FF: "Inter", serif;
+
+    --FS-14: 0.875rem; /* 14px */
+    --FS-16: 1rem;     /* 16px */
+    --FS-24: 1.5rem;   /* 24px */
+
+    --FW-400: 400;
+    --FW-600: 600;
+    --FW-700: 700;
+}
+
+/* Typography */
+body {
+    font-family: var(--FF);
+    color: var(--clr-text);
+}
+
+/* Typography -- User Profile */
+.user-name {
+    font-size: var(--FS-24);
+    font-weight: var(--FW-700);
+}
+
+.user-location,
+.user-desc {
+    font-size: var(--FS-14);
+}
+
+.user-location {
+    color: var(--clr-user-location);
+    font-weight: var(--FW-600);
+}
+
+.user-desc {
+    font-weight: var(--FW-400);
+}
+
+/* Typography -- User Links */
+.user-link {
+    color: var(--clr-text);
+    text-decoration: none;
+    font-weight: var(--FW-700);
+    font-size: var(--FS-14);
+}
+
+/* Layout */
+body {
+    background-color: var(--clr-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--clr-container-bg);
+    height: 100%;
+    max-width: 375px;
+    border-radius: 10px;
+    padding: 1.875em;
+}
+
+/* Layout -- User Profile */
+.user-image {
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 25%;
+    height: 25%;
+    margin-bottom: 1em;
+}
+
+.user-name,
+.user-location,
+.user-desc {
+    text-align: center;
+}
+
+.user-name {
+    margin-bottom: 0.3em;
+}
+
+.user-location {
+    margin-bottom: 1em;
+}
+
+.user-desc {
+    margin-bottom: 1.2em;
+}
+
+/* Layout -- User Links */
+.user-socials {
+    display: grid;
+    text-align: center;
+}
+
+.user-link {
+    margin-bottom: 1.2em;
+    background-color: var(--clr-btn);
+    padding: 0.75em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.user-link:hover,
+.user-link:focus,
+.user-link:active {
+    background-color: var(--clr-btn-hover);
+    color: var(--clr-background);
+}
