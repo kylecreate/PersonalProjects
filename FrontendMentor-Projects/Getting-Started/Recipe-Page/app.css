@@ -203,7 +203,7 @@ td {
         padding-top: 40px;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
-        background-image: url(/images/image-omelette.jpeg);
+        background-image: url(./images/image-omelette.jpeg);
         background-color: var(--clr-white);
         box-shadow: 2px 2px 49px -22px var(--clr-box-shadow);
     }
