@@ -1,6 +1,3 @@
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75,300;1,75,300&family=Sonsie+One&display=swap');
-
 /* Global CSS Reset */
 * {
     margin: 0;
@@ -147,7 +144,7 @@ footer,
     padding: 2% 0;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.7em;
     background-color: var(--clr-white);
 }
 
@@ -187,25 +184,25 @@ main {
 }
 
 .site-title {
-    margin: 20px 0;
+    margin: 1.2em 0;
 }
 
 article {
     flex: 5;
-    margin-right: 10px;
+    margin-right: 0.75em;
 }
 
 .article-title,
 .article-subtitle {
-    margin-bottom: 15px;
+    margin-bottom: 1em;
 }
 
 .article-author {
-    margin-bottom: 10px;
+    margin-bottom: 0.75em;
 }
 
 p {
-    margin-bottom: 10px;
+    margin-bottom: 0.75em;
 }
 
 .secondary {
@@ -213,20 +210,20 @@ p {
 }
 
 footer {
-    margin-top: 10px;
+    margin-top: 0.75em;
 }
 
 /* Layout -- Table */
 .bear-table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 10px;
+    margin-bottom: 0.75em;
     border: 1px solid black;
 }
 
 .bear-table-head,
 td {
-    padding: 10px;
+    padding: 0.75em;
 }
 
 td {
@@ -248,15 +245,14 @@ audio {
 }
 
 audio {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 0.95em 0;
     width: 500px;
 }
 
 /* Layout -- Comments */
 .comments {
     background-color: var(--clr-background-color);
-    padding: 10px;
+    padding: 0.95em;
 }
 
 .show-hide-comments {

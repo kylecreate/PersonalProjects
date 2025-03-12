@@ -1,6 +1,3 @@
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
-
 /* Global CSS Reset */
 * {
     margin: 0;
@@ -15,7 +12,10 @@ html {
     text-size-adjust: none;
 }
 
-body, h1, h2, p {
+body,
+h1,
+h2,
+p {
     margin-block-end: 0;
 }
 
@@ -143,7 +143,7 @@ body {
     top: 0;
     width: 100%;
     background-color: var(--neutral);
-    padding: 20px 0;
+    padding: 1.2em 0;
     border-bottom: 1px solid var(--neutral-focus);
 }
 
@@ -152,7 +152,7 @@ body {
 }
 
 .nav-links a {
-    padding: 0 10px;
+    padding: 0 0.6em;
 }
 
 .nav-links a:hover {
@@ -161,7 +161,7 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 70px 0;
+    padding: 4.375em 0;
 }
 
 #welcome-section {
@@ -176,7 +176,7 @@ section {
 }
 
 #welcome-section p {
-    margin: 25px 0;
+    margin: 1.6em 0;
 }
 
 #projects {
@@ -194,7 +194,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    padding: 20px;
+    padding: 1.2em;
     place-items: center;
     max-width: 1200px;
     margin: auto;
@@ -221,12 +221,12 @@ section {
 }
 
 #projects .project-tile p {
-    padding: 10px;
+    padding: 0.6em;
 }
 
 #projects .project-tile span {
     opacity: 0%;
-    padding: 0 5px;
+    padding: 0 0.3em;
 }
 
 #projects .project-tile:hover span {
@@ -241,7 +241,7 @@ section {
     display: flex;
     align-items: center;
     margin: auto;
-    padding: 0 15px;
+    padding: 0 1em;
     background-color: var(--neutral);
     color: var(--accent);
     border-radius: 5px;
@@ -264,7 +264,7 @@ section {
     flex-wrap: wrap;
     max-width: 1000px;
     justify-content: space-around;
-    margin: 30px auto;
+    margin: 1.875em auto;
 }
 
 #contact .social-media {
@@ -273,17 +273,17 @@ section {
     transition: transform 0.2s ease-in;
     display: flex;
     align-items: center;
-    margin: 20px;
+    margin: 1.2em;
 }
 
 #contact .social-media:hover {
-    transform: translateY(-10px);
+    transform: translateY(-0.6em);
 }
 
 footer {
     border-top: 3px solid var(--primary);
     color: var(--base-100);
-    padding: 30px;
+    padding: 1.875em;
     opacity: 45%;
 }
 

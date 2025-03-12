@@ -1,21 +1,21 @@
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
 /* Global CSS Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 html {
-    scroll-behavior: smooth;
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
 }
 
-body, h1, h2, p {
+body,
+h1,
+h2,
+p {
     margin-block-end: 0;
 }
 
@@ -28,7 +28,8 @@ body {
     line-height: 1.5;
 }
 
-h1, h2 {
+h1,
+h2 {
     line-height: 1.1;
 }
 

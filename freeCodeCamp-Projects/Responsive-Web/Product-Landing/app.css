@@ -1,6 +1,3 @@
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@500;700&display=swap');
-
 /* Global CSS Changes */
 * {
     margin: 0;
@@ -130,7 +127,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0.6em 1.2em;
     box-sizing: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -142,7 +139,7 @@ body {
 .nav-links a {
     text-decoration: none;
     color: var(--text);
-    padding: 0 10px;
+    padding: 0 0.6em;
 }
 
 .logo-container {
@@ -151,7 +148,7 @@ body {
 }
 
 .the-product {
-    margin-left: 10px;
+    margin-left: 0.6em;
 }
 
 #email-section {
@@ -159,7 +156,7 @@ body {
 }
 
 input {
-    padding: 8px;
+    padding: 0.5em;
     color: var(--white);
     cursor: pointer;
 }
@@ -167,20 +164,20 @@ input {
 section::before {
     display: block;
     content: " ";
-    margin-top: -100px;
+    margin-top: -6.25em;
     height: 100px;
     visibility: hidden;
     pointer-events: none;
 }
 
 section {
-    margin: 40px 20px;
+    margin: 2.5em 1.2em;
     text-align: center;
 }
 
 .icon {
     color: var(--green);
-    margin-right: 30px;
+    margin-right: 1.875em;
 }
 
 #features {
@@ -193,7 +190,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px;
+    margin: 1.2em;
 }
 
 #video {
@@ -211,15 +208,15 @@ section {
 }
 
 .product1 {
-    background-image: url(/images/win-friends.jpg);
+    background-image: url(./images/win-friends.jpg);
 }
 
 .product2 {
-    background-image: url(/images/rich-dad.jpg);
+    background-image: url(./images/rich-dad.jpg);
 }
 
 .product3 {
-    background-image: url(/images/atomic-habits.jpg);
+    background-image: url(./images/atomic-habits.jpg);
 }
 
 .product-cards {
@@ -227,22 +224,22 @@ section {
     border-radius: 10px;
     width: 90%;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 0.6em;
 }
 
 .content {
-    margin-bottom: 10px;
+    margin-bottom: 0.6em;
     color: var(--text);
 }
 
 .flex {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.6em;
 }
 
 .main-price {
-    margin-right: 20px;
+    margin-right: 1.2em;
 }
 
 .old-price {
@@ -256,20 +253,20 @@ section {
 }
 
 .header {
-    margin: 10px 0;
+    margin: 0.6em 0;
 }
 
 .add {
     background-color: var(--green);
     cursor: pointer;
-    padding: 15px;
+    padding: 1em;
     border: none;
     border-radius: 10px;
     width: 100%;
     color: var(--white);
     font-family: var(--FF-Montserrat);
     font-weight: var(--FW-700);
-    margin-bottom: 10px;
+    margin-bottom: 0.6em;
 }
 
 @media (max-width: 768px) {

@@ -1,6 +1,3 @@
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
 /* Global CSS Reset */
 * {
     margin: 0;
@@ -151,11 +148,11 @@ body {
 
 .site-logo {
     width: 40px;
-    margin: 30px auto 10px auto;
+    margin: 1.875em auto 0.9em auto;
 }
 
 .site-title {
-    margin: 5px auto 20px auto;
+    margin: 0.3em auto 1.2em auto;
 }
 
 .nav-link {
@@ -163,7 +160,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
-    margin-bottom: 20px;
+    margin-bottom: 1.2em;
 }
 
 .text-heading-title,
@@ -172,14 +169,14 @@ body {
 }
 
 .text-heading-desc {
-    margin-bottom: 20px;
+    margin-bottom: 1.2em;
 }
 
 @media (min-width: 1024px) {
     .heading {
         display: flex;
         justify-content: left;
-        margin: 20px 0 0 40px;
+        margin: 1.2em 0 0 2.5em;
     }
 
     .site-logo {
@@ -188,13 +185,13 @@ body {
     }
 
     .site-title {
-        margin: 6px 0 0 15px;
+        margin: 0.4em 0 0 0.9em;
         font-size: var(--FS-22);
     }
 
     .nav-link {
         justify-content: right;
-        margin: -37px 40px 40px 0;
+        margin: -2.25em 2.5em 2.5em 0;
         gap: 15px;
     }
 }
@@ -206,7 +203,7 @@ body {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
         justify-content: center;
-        margin-top: 50px;
+        margin-top: 3.125em;
         max-width: 100%;
     }
 }
@@ -214,16 +211,16 @@ body {
 /* Layout -- Projects Section */
 .projects {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.2em;
 }
 
 .projects-title {
-    margin-bottom: 15px;
+    margin-bottom: 1em;
 }
 
 .projects-list-item {
     list-style: none;
-    margin: 10px;
+    margin: 0.75em;
 }
 
 .projects-list-item a {
@@ -238,35 +235,35 @@ body {
 
 @media (min-width: 1024px) {
     .projects {
-        margin-right: 15px;
+        margin-right: 1em;
         border-right: 1px solid var(--clr-black);
     }
 
     .projects-list-item {
-        margin-bottom: 25px;
+        margin-bottom: 1.5em;
     }
 }
 
 /* Layout -- Work Section */
 .experience {
-    margin-bottom: 20px;
+    margin-bottom: 1.2em;
 }
 
 .experience-title {
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 1em;
 }
 
 .experience-box {
     border: 1px solid var(--clr-black);
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    padding: 0.75em;
+    border-radius: 0.75em;
+    margin-bottom: 0.75em;
 }
 
 .experience-place-title {
     font-weight: var(--FW-bold);
-    margin-bottom: 10px;
+    margin-bottom: 0.75em;
 }
 
 .experience-place-link {
@@ -285,25 +282,25 @@ body {
 
 @media (min-width: 1024px) {
     .experience {
-        margin-right: 15px;
+        margin-right: 0.9em;
         border-right: 1px solid var(--clr-black);
     }
 
     .experience-box {
         max-width: 300px;
-        margin: 0 auto 10px;
+        margin: 0 auto 0.75em;
     }
 }
 
 /* Layout -- Education Section */
 .education {
-    margin-bottom: 20px;
+    margin-bottom: 1.2em;
 }
 
 .education-title,
 .education-desc,
 .education-courses {
-    margin-bottom: 10px;
+    margin-bottom: 0.75em;
 }
 
 .education-title {
@@ -312,8 +309,8 @@ body {
 
 .education-course-item {
     list-style-type: none;
-    margin-left: 5px;
-    margin-bottom: 4px;
+    margin-left: 0.3em;
+    margin-bottom: 0.25em;
 }
 
 .education-course-item:before {
@@ -322,19 +319,19 @@ body {
 
 /* Layout -- Teacher Reviews Section */
 .reviews {
-    margin-bottom: 20px;
+    margin-bottom: 1.2em;
 }
 
 .reviews-title {
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 1em;
 }
 
 .reviews-box {
     border: 1px solid var(--clr-black);
-    margin-bottom: 10px;
+    margin-bottom: 0.75em;
     border-radius: 8px;
-    padding: 10px;
+    padding: 0.75em;
 }
 
 .reviews-teacher {
@@ -343,6 +340,6 @@ body {
 
 /* Layout -- Site Footer */
 .footer {
-    margin: 20px;
+    margin: 1.2em;
     text-align: center;
 }

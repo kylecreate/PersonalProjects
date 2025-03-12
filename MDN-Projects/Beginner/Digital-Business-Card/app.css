@@ -1,6 +1,3 @@
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
 /* Global CSS Reset */
 * {
     margin: 0;
@@ -91,7 +88,7 @@ body {
     max-height: 100%;
     max-width: 35%;
     border-radius: 15px;
-    margin-right: 1.5em;
+    margin: 0.3em 1.5em 0 0;
 }
 
 .card footer {
