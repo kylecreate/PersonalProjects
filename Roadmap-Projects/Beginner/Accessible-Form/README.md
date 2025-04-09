@@ -5,9 +5,7 @@ In this project, you are required to create a form UI using only HTML and CSS. T
 The goal of this project is to not only help you practice your HTML and CSS but also to focus on creating an accessible form that is easy to use for all users, including those with disabilities. Given below is the rough mockup of the form UI that you need to create:
 
 ### Accessibility Guidelines
-
 You should read up on accessibility guidelines and best practices before starting this project. However, here are some key points to keep in mind while creating an accessible form UI:
-
 - **Labeling**: Ensure that each form field has a corresponding `<label>` element that is clearly associated with the field using the `for` attribute.
 
 - **Focus State**: Style the focus state of each input field so that users navigating with a keyboard can easily see which field is currently active.
